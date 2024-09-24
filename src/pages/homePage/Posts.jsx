@@ -1,6 +1,6 @@
 import React from 'react'
 import postsData from "./postsData"
-import Post from "./Post"
+import Post from "./components/Post"
 export default function Posts() {
     // console.log(postsData)
   return (
