@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import posts from "./posts"
 function App() {
-  // console.log(posts)
+  console.log(posts)
 
 
   return (
@@ -13,13 +13,20 @@ function App() {
       <div>
         <h4>
         {post.title}
-
         </h4>
-       {post.comments.map((comment)=>(
-        <div>
-          {console.log(comment)}
-        </div>
-       ))}
+        {/* {console.log(post)} */}
+        {post.comments.map((comment)=>(
+          <h5>
+            {comment.text}
+            {/* {console.log(comment)} */}
+            {comment.replies.map((reply)=>(
+              <li>
+                {reply.text}
+                {console.log(reply)}
+              </li>
+            ))}
+          </h5>
+        ))}
       </div>
     ))}
     </>
