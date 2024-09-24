@@ -19,7 +19,7 @@ export default function Posts() {
         // if it includes console yay otherwise log noooo
 
       })
-
+      setPostList(filteredPosts)
       console.log(filteredPosts)
       //we want to filter post titles based on the input
       //let's just start with filtering
