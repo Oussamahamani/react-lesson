@@ -15,13 +15,12 @@ function App() {
     let total = count+1
     setCount(total)
     console.log(total,"after")
-    return <p>{num}</p>
   }
   return (
     <>
-   {/* <Posts/> */}
-   {count}
-   <button onClick={increment}>increment</button>
+   <Posts/>
+   {/* {count}
+   <button onClick={increment}>increment</button> */}
     </>
   )
 }
